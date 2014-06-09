@@ -1,0 +1,57 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        style="@style/headig"
+        android:text="@string/log_in_panel" />
+
+    <TableLayout
+        style="@style/table_layout"
+        android:background="@drawable/drawable_tablelayout" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/mobile_no" />
+
+            <EditText
+                android:id="@+id/login_mobile_no"
+                style="@style/edittext" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/login_your_blood_group" />
+
+            <Spinner
+                android:id="@+id/login_blood_group"
+                style="@style/spinner_style" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/register_button"
+                style="@style/tablerowButton"
+                android:text="@string/registration" />
+
+            <Button
+                android:id="@+id/login_button"
+                style="@style/tablerowButton"
+                android:text="@string/log_in" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/quick_search_textView"
+            style="@style/quicksearchtext" />
+    </TableLayout>
+
+</TableLayout>

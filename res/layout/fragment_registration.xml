@@ -1,0 +1,82 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        style="@style/headingRegisterPanel"
+        android:text="@string/registration_form" />
+
+    <TableLayout
+        style="@style/table_layout_registerpanel"
+        android:background="@drawable/drawable_tablelayout" >
+
+        <TableRow style="@style/tablerow" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/donar_register_name" />
+
+            <EditText
+                android:id="@+id/register_donarName_EditText"
+                style="@style/edittextofRegistration" />
+        </TableRow>
+
+        <TableRow style="@style/tablerow" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/mobile_no_1" />
+
+            <EditText
+                android:id="@+id/register_donarMobileNoOne_EditText"
+                style="@style/edittextofRegistration" />
+        </TableRow>
+        <TableRow style="@style/tablerow" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/donar_address" />
+
+            <EditText
+                android:id="@+id/register_donarAddress_EditText"
+                style="@style/edittextofRegistration" />
+        </TableRow>
+
+        <TableRow style="@style/tablerow" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/login_your_blood_group" />
+
+            <Spinner
+                android:id="@+id/register_blood_group"
+                style="@style/spinner_style" />
+        </TableRow>
+
+        <TableRow style="@style/tablerow" >
+
+            <TextView
+                style="@style/titletextview"
+                android:text="@string/donar_password" />
+
+            <EditText
+                android:id="@+id/register_donarPassword_EditText"
+                style="@style/edittextofRegistration"
+                android:inputType="textPassword" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/registerOk_button"
+                style="@style/tablerowButton"
+                android:text="@string/ok_complete_register" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                style="@style/tablerowButton"
+                android:text="@string/cancel_register" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>
